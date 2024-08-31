@@ -4,11 +4,11 @@ import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
+import python from "../assets/python.jpeg";
 // import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import chakra from "../assets/chakra.png";
-import Mongo from "../assets/mongo.png";
+import typescript from "../assets/typescript.png";
 
 const Skills = () => {
   return (
@@ -36,6 +36,10 @@ const Skills = () => {
             <p className="my-4">JAVASCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={chakra} alt="HTML icon" />
+            <p className="my-4">CHKRA-UI</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
             <p className="my-4">REACT</p>
           </div>
@@ -44,21 +48,13 @@ const Skills = () => {
             <p className="my-4">GITHUB</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
-            <p className="my-4">NODE JS</p>
+            <img className="w-20 mx-auto" src={typescript} alt="HTML icon" />
+            <p className="my-4">TYPESCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Mongo} alt="HTML icon" />
-            <p className="my-4">MONGO DB</p>
+            <img className="w-20 mx-auto" src={python} alt="HTML icon" />
+            <p className="my-4">PYTHON</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={chakra} alt="HTML icon" />
-            <p className="my-4">CHKRA-UI</p>
-          </div>
-          {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={FireBase} alt="HTML icon" />
-            <p className="my-4">FIREBASE</p>
-          </div> */}
         </div>
       </div>
     </div>
