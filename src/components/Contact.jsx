@@ -55,7 +55,7 @@ const Contact = () => {
       {/* Social Icons Section - Visible only on small and medium screens */}
       <div className="flex flex-col w-full py-5  lg:hidden">
         <p className="text-1xl font-bold inline border-b-4 border-pink-600 text-gray-300 my-4">
-          Social Contact
+          Socials Contacts
         </p>
         <a
           className="flex justify-between items-center w-[100px] text-gray-300 bg-blue-600 my-2 p-2 rounded hover:bg-blue-700 transition duration-300"
@@ -71,7 +71,7 @@ const Contact = () => {
         </a>
         <a
           className="flex justify-between items-center w-[100px] text-gray-300 bg-[#6fc2b0] my-2 p-2 rounded hover:bg-teal-600 transition duration-300"
-          href="https://wa.me/+22236800582"
+          href="https://wa.me/+22246800582"
         >
           Whatsapp <FaWhatsapp size={30} />
         </a>
