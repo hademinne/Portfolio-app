@@ -7,10 +7,11 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
+      {/* Form Section - Visible only on large screens */}
       <form
         method="POST"
         action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col max-w-[600px] w-full hidden lg:flex"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
@@ -49,29 +50,32 @@ const Contact = () => {
         <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
-
-        {/* Social icons */}
-        <div className="flex justify-around w-full m-4 sm:flex md:flex lg:hidden">
-          <a
-            className="flex justify-between items-center w-[100px] text-gray-300 bg-blue-600 p-2 rounded hover:bg-blue-700 transition duration-300"
-            href="https://www.linkedin.com/in/medlemine/"
-          >
-            Linkedin <FaLinkedin size={30} />
-          </a>
-          <a
-            className="flex justify-between items-center w-[100px] text-gray-300 bg-[#333333] p-2 rounded hover:bg-gray-800 transition duration-300"
-            href="https://github.com/hademinne"
-          >
-            Github <FaGithub size={30} />
-          </a>
-          <a
-            className="flex justify-between items-center w-[100px] text-gray-300 bg-[#6fc2b0] p-2 rounded hover:bg-teal-600 transition duration-300"
-            href="https://wa.me/+22236800582"
-          >
-            Whatsapp <FaWhatsapp size={30} />
-          </a>
-        </div>
       </form>
+
+      {/* Social Icons Section - Visible only on small and medium screens */}
+      <div className="flex flex-col w-full py-5  lg:hidden">
+        <p className="text-1xl font-bold inline border-b-4 border-pink-600 text-gray-300 my-4">
+          Social Contact
+        </p>
+        <a
+          className="flex justify-between items-center w-[100px] text-gray-300 bg-blue-600 my-2 p-2 rounded hover:bg-blue-700 transition duration-300"
+          href="https://www.linkedin.com/in/medlemine/"
+        >
+          Linkedin <FaLinkedin size={30} />
+        </a>
+        <a
+          className="flex justify-between items-center w-[100px] text-gray-300 bg-[#333333] my-2 p-2 rounded hover:bg-gray-800 transition duration-300"
+          href="https://github.com/hademinne"
+        >
+          Github <FaGithub size={30} />
+        </a>
+        <a
+          className="flex justify-between items-center w-[100px] text-gray-300 bg-[#6fc2b0] my-2 p-2 rounded hover:bg-teal-600 transition duration-300"
+          href="https://wa.me/+22236800582"
+        >
+          Whatsapp <FaWhatsapp size={30} />
+        </a>
+      </div>
     </div>
   );
 };
