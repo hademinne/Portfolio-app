@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -48,6 +49,28 @@ const Contact = () => {
         <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
+
+        {/* Social icons */}
+        <div className="flex justify-around w-full m-4 sm:flex md:flex lg:hidden">
+          <a
+            className="flex justify-between items-center w-[100px] text-gray-300 bg-blue-600 p-2 rounded hover:bg-blue-700 transition duration-300"
+            href="https://www.linkedin.com/in/medlemine/"
+          >
+            Linkedin <FaLinkedin size={30} />
+          </a>
+          <a
+            className="flex justify-between items-center w-[100px] text-gray-300 bg-[#333333] p-2 rounded hover:bg-gray-800 transition duration-300"
+            href="https://github.com/hademinne"
+          >
+            Github <FaGithub size={30} />
+          </a>
+          <a
+            className="flex justify-between items-center w-[100px] text-gray-300 bg-[#6fc2b0] p-2 rounded hover:bg-teal-600 transition duration-300"
+            href="https://wa.me/+22236800582"
+          >
+            Whatsapp <FaWhatsapp size={30} />
+          </a>
+        </div>
       </form>
     </div>
   );
