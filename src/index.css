@@ -1,30 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+/* Applying Raleway font globally using Tailwind */
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@layer base {
   body {
-    @apply font-[Raleway];
+    @apply font-raleway;
   }
   li {
-    @apply px-4;
-    @apply cursor-pointer;
+    @apply px-4 cursor-pointer;
   }
 } */
 
-/*
-this my font
-*/
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+/* Overriding the global font with Press Start 2P */
 body {
   font-family: "Press Start P", cursive;
 }
+
 li {
-  @apply px-4;
-  @apply cursor-pointer;
+  @apply px-4 cursor-pointer;
 }
 
 .content-div {
